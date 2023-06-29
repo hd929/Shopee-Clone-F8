@@ -250,6 +250,12 @@
   border-radius: 5px;
   overflow: hidden;
 }
+
+.auth-form__register-form,
+.auth-form__login-form {
+  display: none;
+}
+
 .auth-form__container {
   padding: 0 32px;
 }
