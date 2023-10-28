@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
+
   <body>
     <div class="app">
       <header class="header">
@@ -176,18 +177,26 @@
             </div>
 
             <div class="header__search">
-              <input
-                class="header__search-input"
-                type="text"
-                placeholder="Tìm kiếm sản phẩm"
-              />
+              <div class="header__search-input-wrap">
+                <input
+                  class="header__search-input"
+                  type="text"
+                  placeholder="Tìm kiếm sản phẩm"
+                />
+              </div>
               <div class="header__search-selection">
                 <span class="header__search-select-label">Trong shop</span>
                 <i class="header__search-select-icon fas fa-chevron-down"></i>
 
                 <ul class="header__search-option">
-                  <li class="header__search-option-item">
+                  <li
+                    class="header__search-option-item header__search-option-item--active"
+                  >
                     <span>Trong shop</span>
+                    <i class="fas fa-check"></i>
+                  </li>
+                  <li class="header__search-option-item">
+                    <span>Ngoài shop</span>
                     <i class="fas fa-check"></i>
                   </li>
                 </ul>
