@@ -184,7 +184,7 @@
                   placeholder="Tìm kiếm sản phẩm"
                 />
 
-                <!-- Search History --> 
+                <!-- Search History -->
                 <div class="header__search-history">
                   <h3 class="header__search-history-heading">
                     Lịch sử tìm kiếm
@@ -199,6 +199,8 @@
                   </ul>
                 </div>
               </div>
+
+              <!-- Search Selection -->
               <div class="header__search-selection">
                 <span class="header__search-select-label">Trong shop</span>
                 <i class="header__search-select-icon fas fa-chevron-down"></i>
@@ -221,8 +223,19 @@
               </button>
             </div>
 
+            <!-- Cart -->
             <div class="header__cart">
-              <i class="header__cart-icon fas fa-shopping-cart"></i>
+              <div class="header__cart-wrap">
+                <i class="header__cart-icon fas fa-shopping-cart"></i>
+                <div class="header__cart-list header__cart-list--no-cart">
+                  <img
+                    src="./assets/img/no_cart.png"
+                    alt="no cart"
+                    class="header__cart-no-cart-img"
+                  />
+                  <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
