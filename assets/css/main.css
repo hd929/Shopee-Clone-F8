@@ -540,7 +540,7 @@
 
 .header__cart-list {
   cursor: default;
-  /* display: none; */
+  display: none;
   position: absolute;
   top: calc(100% + 8px);
   right: 50px;
