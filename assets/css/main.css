@@ -540,7 +540,7 @@
 
 .header__cart-list {
   cursor: default;
-  display: none;
+  /* display: none; */
   position: absolute;
   top: calc(100% + 8px);
   right: 50px;
@@ -553,11 +553,11 @@
 .header__cart-list:before {
   content: '';
   position: absolute;
-  border-style: solid;
-  border-width: 16px 23px;
-  bottom: calc(100% - 8px);
-  left: calc(90% - 5px);
-  border-color: transparent transparent var(--white-color) transparent;
+  bottom: calc(100% - 2px);
+  right: 2%;
+  border-bottom: 10px solid var(--white-color);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
 }
 
 .header__cart-list::after {
@@ -565,8 +565,8 @@
   position: absolute;
   bottom: 100%;
   right: 0;
-  width: 100px;
-  height: 40px;
+  width: 50px;
+  height: 10px;
 }
 
 .header__cart-list--no-cart {
