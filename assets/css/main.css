@@ -574,15 +574,36 @@
 }
 
 .header__cart-no-cart-img {
+  display: none;
   width: 54%;
+  margin: 0 auto;
 }
 
 .header__cart-no-cart-msg {
-  display: block;
+  display: none;
   font-size: 1.4rem;
   margin-top: 14px;
   color: var(--text-color);
   font-weight: 500;
+}
+
+.header__cart-notice {
+  display: block;
+  position: absolute;
+  padding: 1px 6px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  bottom: 62%;
+  left: 52%;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.header__cart-list--no-cart > .header__cart-no-cart-msg,
+.header__cart-list--no-cart > .header__cart-no-cart-img {
+  display: block;
 }
 
 /* Search History */
