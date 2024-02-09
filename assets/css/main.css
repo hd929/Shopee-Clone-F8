@@ -9,6 +9,8 @@
 }
 
 .header__navbar-list {
+  display: flex;
+  align-items: center;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -47,6 +49,19 @@
 }
 
 .header__navbar-item--strong {
+  font-weight: 400;
+}
+
+.header__navbar-user-img {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 500rem;
+  margin: 4px;
+  box-shadow: 0px 0px 2px #000;
+}
+
+.header__navbar-user-name {
   font-weight: 400;
 }
 
