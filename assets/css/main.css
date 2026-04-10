@@ -1040,6 +1040,7 @@ header__navbar-user {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 .home-product-item__price {
