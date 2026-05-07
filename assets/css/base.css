@@ -55,12 +55,14 @@ html {
 }
 
 .modal__body {
-  --growth-from: 0;
+  --growth-from: 0.7;
   --growth-to: 1;
   position: relative;
   margin: auto;
   z-index: 1;
-  animation: growth linear 0.2s;
+  border-radius: 8px;
+  /* Modern smooth corners */
+  animation: growth ease-out 0.3s;
 }
 
 /* Button style */
@@ -72,7 +74,7 @@ html {
   min-width: 124px;
   height: 34px;
   border: none;
-  border-radius: 2px;
+  border-radius: 6px;
   font-size: 1.4rem;
   text-decoration: none;
   cursor: pointer;
@@ -80,6 +82,7 @@ html {
   padding: 0 12px;
   color: var(--text-color);
   background: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn.btn--size-s {
@@ -91,6 +94,7 @@ html {
 .btn--primary {
   background-color: var(--primary-color);
   color: var(--white-color);
+  box-shadow: 0 2px 6px rgba(238, 77, 45, 0.4);
 }
 
 .btn--normal {
@@ -99,6 +103,8 @@ html {
 
 .btn--primary:hover {
   background-color: #f05d41;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(238, 77, 45, 0.5);
 }
 
 .btn--normal:hover {
@@ -111,7 +117,7 @@ html {
   background-color: #888;
 }
 
-.btn + .btn {
+.btn+.btn {
   margin-left: 8px;
 }
 
@@ -119,6 +125,7 @@ html {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -128,6 +135,7 @@ html {
   from {
     transform: scale(var(--growth-from));
   }
+
   to {
     transform: scale(var(--growth-to));
   }
